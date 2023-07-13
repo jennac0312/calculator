@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="/calculator/style.css">
+</head>
+<body>
+    
+    <!-- simple calculator -->
+    <h1>Calculator</h1>
+    <div class="body">
+        <div class="calculator">
+            <!-- display container -->
+            <div class="display">
+                <p class="calculation"></p>
+            </div>
+    
+            <div class="buttonsContainer">
+                <div class="numbersContainer">
+                    <div class="row1">
+                        <button class="7" onclick="displayOnScreen('7')">7</button>
+                        <button class="4" onclick="displayOnScreen('4')">4</button>
+                        <button class="1" onclick="displayOnScreen('1')">1</button>
+                        <button class="0" onclick="displayOnScreen('0')">0</button>
+                    </div>
+                    
+                    <div class="row2">
+                        <button class="8" onclick="displayOnScreen('8')">8</button>
+                        <button class="5" onclick="displayOnScreen('5')">5</button>
+                        <button class="2" onclick="displayOnScreen('2')">2</button>
+                        <button class="clear" onclick="clearScreen()">AC</button>
+                    </div>
+                    
+                    <div class="row3">
+                        <button class="9" onclick="displayOnScreen('9')">9</button>
+                        <button class="6" onclick="displayOnScreen('6')">6</button>
+                        <button class="3" onclick="displayOnScreen('3')">3</button>
+                        <button class="add operation" onclick="displayOnScreen('+')">+</button>
+                    </div>
+    
+                    <!-- <div class="row4"> -->
+                    <!-- </div> -->
+                </div>
+        
+                <div class="rightSide">
+                    <button class="divide operation" onclick="displayOnScreen('/')">÷</button>
+                    <button class="multiply operation" onclick="displayOnScreen('*')">*</utton>
+                    <button class="subtract operation" onclick="displayOnScreen('-')">-</button>
+                    <button class="equal operation" onclick="splitInput()">=</button>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+
+
+
+    <script src="/calculator/app.js"></script>
+</body>
+</html>
