@@ -1,5 +1,3 @@
-
-
 // where i want numbers to display
 const calculation = document.querySelector('.calculation')
 
